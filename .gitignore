@@ -74,3 +74,4 @@ wp-content/plugins/*
 # wp-content/wp-cache-config.php
 !.github
 !_wp-config-env.php
+!app
