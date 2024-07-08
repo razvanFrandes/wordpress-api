@@ -18,7 +18,6 @@
     "wpackagist-plugin/simple-jwt-login": "*",
     "wpackagist-plugin/mailgun": "*",
     "guzzlehttp/guzzle": "^7.8",
-    "minishlink/web-push": "^8.0",
     "composer/installers": "^2.0",
     "johnpbloch/wordpress-core-installer": "^2.0",
     "humanmade/mu-plugins-loader": "^1.0",
