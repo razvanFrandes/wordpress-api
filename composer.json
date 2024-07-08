@@ -1,0 +1,65 @@
+{
+  "name": "razvan/hope-app",
+  "description": "Hope App ",
+  "authors": [
+    {
+      "name": "razvanFrandes",
+      "email": "razvan.frandes@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "WP\\": "app/"
+    }
+  },
+  "require": {
+    "vlucas/phpdotenv": "*",
+    "wpackagist-plugin/query-monitor": "*",
+    "wpackagist-plugin/simple-jwt-login": "*",
+    "wpackagist-plugin/mailgun": "*",
+    "guzzlehttp/guzzle": "^7.8",
+    "minishlink/web-push": "^8.0",
+    "composer/installers": "^2.0",
+    "johnpbloch/wordpress-core-installer": "^2.0",
+    "humanmade/mu-plugins-loader": "^1.0",
+    "illuminate/container": "^11.14"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "humanmade/mu-plugins-loader": true,
+      "johnpbloch/wordpress-core-installer": true
+    }
+  },
+  "extra": {
+    "installer-paths": {
+      "wp-content/mu-plugins/{$name}/": [
+        "type:wordpress-plugin",
+        "type:wordpress-muplugin"
+      ],
+      "wp-content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ]
+    },
+    "wordpress-install-dir": "wp",
+    "query-monitor": {
+      "type": "wordpress-muplugin"
+    },
+    "simple-jwt-login": {
+      "type": "wordpress-muplugin"
+    },
+    "mailgun": {
+      "type": "wordpress-muplugin"
+    }
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.59",
+    "phpstan/phpstan": "^1.11"
+  }
+}
